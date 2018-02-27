@@ -18,37 +18,67 @@
             font: 14px/1.4 Arial;
             text-align: center;
             background-color: #FFF2E3;
+            color: #87968e;
         }
         h1 {
+            margin: 50px;
             font-size: 50px;
             color: #87968E;
             margin-top: 30px;
         }
+        a {
+            text-decoration: none;
+            color: #72b890;
+        }
+        .describe {
+            margin: 50px;
+        }
+        .active{
+            opacity: 0.7;
+        }
+        .active:hover{
+            background-color: #72b890;
+            opacity: 1;
+        }
         .btn{
             margin: 7px;
-            padding: 5px 10px ;
+            padding: 5px 10px;
             border-radius: 2px;
             display: inline-block;
             background-color: #72B890;
             text-decoration: none;
             color:#fff;
         }
+        .btn:hover {
+            opacity: 0.7;
+        }
+        .proj-con {
+            margin: 20px;
+        }
         .proj-con>li {
             display: inline-block;
+        }
+        .describe-con {
+            margin: 20px;
         }
         .describe-con>li {
             display: inline-block;
         }
+        .img-con {
 
+        }
+        .footer {
+            margin: 40px;
+        }
     </style>
 </head>
 
 <body>
     <h1 class="header">我的项目</h1>
     <p class="describe">一句话介绍项目</p>
-    <ul class="proj-con">
+    <ul class="proj-con" >
         <li>
-            <a class="btn" href="">项目1</a>
+            <a class="btn active" href="">项目1</a>
         </li>
         <li>
             <a class="btn" href="">项目2</a>
