@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vertical-align</title>
+    <style>
+        .wrap::before {
+            content: '';
+            height: 100%;
+            background-color: blue;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .wrap {
+            height: 600px;
+            width: 400px;
+            border: 2px solid red;
+            text-align: center;
+        }
+        .wrap img {
+            vertical-align: middle;
+        }
+        span {
+            font-size: 160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+    </div>
+</body>
+</html>
