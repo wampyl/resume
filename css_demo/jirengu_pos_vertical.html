@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>position_vertical-align</title>
+    <style>
+        .wrap::before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            /* width: 2px; */
+            /* background-color: red; */
+            vertical-align: middle;
+
+        }
+
+        .wrap {
+            border: 1px solid red;
+            width: 500px;
+            height: 500px;
+            text-align: center;
+        }
+
+        .wrap img {
+            vertical-align: middle;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <img src="https://www.google.com.hk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+    </div>
+</body>
+
+</html>
