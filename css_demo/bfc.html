@@ -6,41 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BFC</title>
     <style>
-        * {
+        ul,
+        li {
             margin: 0;
             padding: 0;
         }
-        ul {
-            list-style: none;
-        }
         .wrap {
             width: 800px;
-            /* text-align: center; */
-            margin: 10px auto;
+            margin: 0 auto;
         }
-        h1 {
+        .wrap h1 {
             text-align: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
         }
-        .wrap ul li {
-            width: 250px;
-            /* height: 300px; */
+        .h-card {
+            width: 220px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+        }
+        .h-card>img {
+            width: 100%;
+            opacity: 0.75;
+        }
+        .container .h-card {
             float: left;
-            /* overflow: hidden; */
-            /* margin: 20px; */
-            /* margin:0 auto; */
+            margin: 10px 20px;
+            list-style: none;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .container:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .h-card {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="wrap">
-        <h2>风景列表</h2>
-        <ul>
-            <li><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
-            <li><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
-            <li><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
-            <li><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
-            <li><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
-            <li><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
+    <div class="wrap content">
+        <h1>风景列表</h1>
+        <ul class="clearfix container">
+            <li class="h-card"><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
+            <li class="h-card"><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
+            <li class="h-card"><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
+            <li class="h-card"><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
+            <li class="h-card"><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
+            <li class="h-card"><img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt=""><p>风景如画</p></li>
         </ul>
     </div>
 </body>
