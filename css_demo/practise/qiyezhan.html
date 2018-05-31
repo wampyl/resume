@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>my project</title>
     <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_688816_g9izsn4w8o0kvs4i.css">
     <style>
         ul {
             list-style: none;
@@ -21,7 +23,6 @@
         span:hover {
             color: #fed136;
         }
-
 
         /* 左上角标题 */
 
@@ -38,44 +39,63 @@
 
         /* 右上menu */
 
+        /* 字体颜色 */
+
         .index-color {
-            /* color: rgb(223, 107, 107); */
             color: #fff;
         }
 
         .menu {
-            /* float: right; */
-            position: relative;
-            top: -30px;
-            left: 700px;
+            float: right;
+            margin-right: 100px;
+            margin-top: -10px;
         }
 
         .menu>li {
             float: left;
         }
 
+        .menu>li:hover {
+            color: #fed136;
+        }
+
         .index-content {
-            padding: 250px 0 320px 0;
+            padding: 250px 0 350px 0;
             width: 800px;
             margin: 20px auto;
             text-align: center;
             font-size: 30px;
         }
+
         .index {
             margin: 0;
             background-size: 100%;
-            background-image: url(https://i.loli.net/2018/05/28/5b0bf24a353ab.jpg);
-        }
-        .button {
-            /* margin: 50px; */
-            padding: 20px 30px;
-            background-color: #fed136;
-            border-radius: 3px;
+            /* background-image: url(https://i.loli.net/2018/05/28/5b0bf24a353ab.jpg); */
+            /* background-image: url(https://i.loli.net/2018/05/31/5b0fc92184b12.jpg); */
+            background-image: url(https://i.loli.net/2018/05/31/5b0fc9af8b7fb.jpg);
         }
 
+
         /* 2 index */
-        .service > li {
+
+        .service>li {
             display: inline-block;
+        }
+
+        .service p {
+            width: 250px;
+        }
+
+        .service {
+            text-align: center;
+        }
+
+        .service-wrap {
+            padding: 150px 0 500px 0;
+        }
+
+        .service-header {
+            margin: 40px 0 200px 0;
         }
     </style>
 </head>
@@ -103,24 +123,44 @@
             </ul>
         </header>
         <div class="index-color index-content">
-            <h2><i>Welcome To Our Studio</i></h2>
+            <h2>
+                <i>Welcome To Our Studio</i>
+            </h2>
             <h1>IT IS NICE TO MEET YOU</h1>
-            <a class="button">TELL ME MORE</a>
+            <a class="button" href="#">TELL ME MORE</a>
+        </div>
+    </section>
+    <section class="service">
+        <div class="service-wrap">
+            <div class="service-header">
+                <h2>SERVICES</h2>
+                <em>Lorem ipsum dolor sit amet consectetur.</em>
+            </div>
+            <div class="service-main">
+                <ul class="service clearfix">
+                    <li>
+                        <i class="iconfont icon-qing"></i>
+                        <span>World of Tanks</span>
+                        <p class="service-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.</p>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-fengkong"></i>
+                        <span>World of WarShips</span>
+                        <p class="service-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit.</p>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-dayu"></i>
+                        <span>World of WarShips</span>
+                        <p class="service-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore
+                            harum ex magni, dicta impedit. </p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <section>
-        <h2>SERVICES</h2>
-        <i>Lorem ipsum dolor sit amet consectetur.</i>
-        <div>
-            <ul class="service">
-                <!-- <li><img src="" alt=""><p>E-Commerce</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p></li>
-                <li><img src="" alt=""><p>E-Commerce</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p></li>
-                <li><img src="" alt=""><p>E-Commerce</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p></li> -->
-                <li><span>E-Commerce</span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p></li>
-                <li><span>Responsive Design</span><p>afdsadfd</p></li>
-                <li><span>Web Security</span><p></p></li>
-            </ul>
-        </div>
     </section>
 </body>
 
