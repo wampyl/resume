@@ -12,15 +12,20 @@
     <style>
         ul {
             list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
-        span {
-            margin: 10px;
+        /* 1 */
+
+        .menu a {
+            /* padding: 10px; */
+            margin: 0 10px;
             font: bold;
             font-weight: 700;
         }
 
-        span:hover {
+        .menu a:hover {
             color: #fed136;
         }
 
@@ -34,29 +39,21 @@
             margin: 0;
             color: #fed136;
             font-size: 30px;
-
         }
 
         /* 右上menu */
+        .menu {
+            float: right;
+            margin-right: 100px;
+        }
+        .menu>li{
+            float: left;
+        }
 
         /* 字体颜色 */
 
         .index-color {
             color: #fff;
-        }
-
-        .menu {
-            float: right;
-            margin-right: 100px;
-            margin-top: -10px;
-        }
-
-        .menu>li {
-            float: left;
-        }
-
-        .menu>li:hover {
-            color: #fed136;
         }
 
         .index-content {
@@ -78,47 +75,53 @@
 
         /* 2 index */
 
-        .service>li {
-            display: inline-block;
-        }
-
-        .service p {
-            width: 250px;
-        }
-
-        .service {
+        .wg-intro {
             text-align: center;
         }
 
-        .service-wrap {
-            padding: 150px 0 500px 0;
+        .wg-games>li {
+            float: left;
+            width: 33%;
         }
 
-        .service-header {
-            margin: 40px 0 200px 0;
+        .wg-games span {
+            font-size: 100px;
+        }
+
+        .wg-games h3 {
+            font-size: 18px;
+        }
+
+        .wg-intro h2 {
+            font-size: 40px;
+            margin-top: 150px;
+        }
+
+        .wg-game {
+            margin-top: 200px;
         }
     </style>
 </head>
 
 <body>
     <section class="index">
-        <header>
+        <header class="clearfix">
             <h2 class="title">Start Project</h2>
-            <ul class="index-color menu">
+            <ul class="index-color menu clearfix">
                 <li>
-                    <span>SERVICES</span>
+                    <a href="#">SERVICES</a>
                 </li>
                 <li>
-                    <span>PORTFOLIO</span>
+                    <a href="#">PORTFOLIO</a>
                 </li>
                 <li>
-                    <span>ABOUT</span>
+                    <a href="#">ABOUT</a>
                 </li>
                 <li>
-                    <span>TEAM</span>
+                    <a href="#">TEAM</a>
                 </li>
                 <li>
-                    <span>CONTACT</span>
+                    <a href="#">CONTACT</a>
                 </li>
             </ul>
         </header>
@@ -130,34 +133,30 @@
             <a class="button" href="#">TELL ME MORE</a>
         </div>
     </section>
-    <section class="service">
-        <div class="service-wrap">
-            <div class="service-header">
-                <h2>SERVICES</h2>
-                <em>Lorem ipsum dolor sit amet consectetur.</em>
-            </div>
-            <div class="service-main">
-                <ul class="service clearfix">
-                    <li>
-                        <i class="iconfont icon-qing"></i>
-                        <span>World of Tanks</span>
-                        <p class="service-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore
-                            harum ex magni, dicta impedit.</p>
-                    </li>
-                    <li>
-                        <i class="iconfont icon-fengkong"></i>
-                        <span>World of WarShips</span>
-                        <p class="service-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore
-                            harum ex magni, dicta impedit.</p>
-                    </li>
-                    <li>
-                        <i class="iconfont icon-dayu"></i>
-                        <span>World of WarShips</span>
-                        <p class="service-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore
-                            harum ex magni, dicta impedit. </p>
-                    </li>
-                </ul>
-            </div>
+    <section class="wg-intro">
+        <div class="layout">
+            <h2>wargaming</h2>
+            <p>战争三部曲</p>
+            <ul class="wg-games clearfix">
+                <li>
+                    <!-- <i class="iconfont icon-qing"></i> -->
+                    <span class="iconfont icon-qing"></span>
+                    <h3>World of Tanks</h3>
+                    <p>领土争夺战是《坦克世界》基于浏览器的多人军事模拟游戏。在领土争夺战中，玩家需要结交志同道合的战友创建军团，在全球作战地图上与其他军团进行领土争夺。</p>
+                </li>
+                <li>
+                    <!-- <i class="iconfont icon-fengkong"></i> -->
+                    <span class="iconfont icon-fengkong"></span>
+                    <h3>World of WarShips</h3>
+                    <p>游戏中玩家将会操控史上各国著名战舰鏖战大洋，重现二战世界大型海战实景。玩家需每人驾驶一艘战舰与其他11名玩家随机组成一支队伍，与另一支队伍在随机地图中互相战斗，完成目标并取得胜利。</p>
+                </li>
+                <li>
+                    <!-- <i class="iconfont icon-dayu"></i> -->
+                    <span class="iconfont icon-dayu"></span>
+                    <h3>World of Warplanes</h3>
+                    <p>游戏包含3种战机：专精于缠斗的中轻型战斗机，火力强大的重型战斗机，以及扮演黑死神角色的对地攻击机 </p>
+                </li>
+            </ul>
         </div>
     </section>
     <section>
