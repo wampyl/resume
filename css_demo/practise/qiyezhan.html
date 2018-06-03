@@ -8,10 +8,15 @@
     <title>my project</title>
     <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_688816_g9izsn4w8o0kvs4i.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_688816_gy17a829wpbsxlxr.css">
     <style>
         ul {
             list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
             margin: 0;
             padding: 0;
         }
@@ -108,21 +113,157 @@
 
         .wg-list {
             text-align: center;
-            /* margin: 100px 0 200px 0; */
             padding: 100px 0;
             background-color: #F7F7F7;
         }
+
         .wg-list h2 {
             margin-top: 100px;
         }
+
         .wg-list div>ul>li {
             background-color: #fff;
             margin: 10px 10px;
             width: 30%;
         }
-        .wg-list li>div {
-            height: 100%;
-            width: 100%;
+
+        .wg-list a {
+            display: block;
+            height: 100px;
+        }
+
+        .wg-lis img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* 4 */
+
+        .wg-timeline {
+            margin: 200px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .wg-timeline-main>li {
+            margin-top: 20px;
+        }
+
+        .wg-timeline-main>li::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .wg-timeline-main img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid lightskyblue;
+        }
+
+        .wg-timeline-main>li:nth-child(odd) img {
+            float: right;
+        }
+
+        .wg-timeline-main>li:nth-child(odd) {
+            padding-right: calc(50% - 50px);
+            text-align: right;
+        }
+
+        .wg-timeline-main>li:nth-child(odd) dl {
+            margin-right: 120px;
+        }
+
+        .wg-timeline-main>li:nth-child(even) img {
+            float: left;
+        }
+
+        .wg-timeline-main>li:nth-child(even) {
+            padding-left: calc(50% - 50px);
+            text-align: left;
+        }
+
+        .wg-timeline-main>li:nth-child(even) dl {
+            margin-left: 120px;
+        }
+
+        .wg-timeline-main>li dt {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .wg-timeline-main>li>dl>dd:nth-of-type(1) {
+            font-weight: 500;
+        }
+
+        .wg-timeline-main>li::before {
+            content: '';
+            display: inline-block;
+
+            position: absolute;
+            /* top: 40px; */
+            left: 50%;
+            top: 170px;
+            margin-left: 0;
+
+            height: 24px;
+            width: 4px;
+            background-color: lightskyblue;
+        }
+
+        /* 5 */
+
+        .wg-team {
+            margin: 200px 0;
+            padding: 100px 0;
+            text-align: center;
+            background-color: #F7F7F7;
+        }
+
+        .wg-team>p {
+            margin: 20px auto;
+        }
+
+        .wg-team>ul {
+            margin-top: 100px;
+            width: 1000px;
+            margin: 100px auto;
+        }
+
+        .wg-team>ul img {
+            border-radius: 50%;
+        }
+
+        .wg-team>ul>li {
+            float: left;
+            width: 33%;
+            /* margin: 0 30px; */
+        }
+
+        .wg-team .iconfont {
+            margin: 0 6px;
+            font-size: 30px;
+        }
+
+        .wg-team .iconfont:hover {
+            background-color: yellow;
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+
+        footer {
+        }
+        footer>ul{
+            text-align: center;
+            width: 2000px;
+        }
+        footer>ul>li {
+            float: left;
+            width: 33%;
+        }
+        footer .iconfont {
+            font-size: 30px;
         }
     </style>
 </head>
@@ -189,39 +330,154 @@
             <p>Lorem ipsum dolor sit amet consectetur.</p>
             <ul class="wg-games clearfix">
                 <li>
-                    <div class="card"><span class="iconfont icon-qing"></span></div>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
                     <h3>World of Tanks</h3>
                     <p>Graphic Design</p>
                 </li>
                 <li>
-                    <span class="iconfont icon-fengkong"></span>
-                    <h3>World of WarShips</h3>
-                    <p>Graphic Design</p>
-                </li>
-                <li>
-                    <span class="iconfont icon-dayu"></span>
-                    <h3>World of Warplanes</h3>
-                    <p>Graphic Design</p>
-                </li>
-                <li>
-                    <span class="iconfont icon-qing"></span>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
                     <h3>World of Tanks</h3>
                     <p>Graphic Design</p>
                 </li>
                 <li>
-                    <span class="iconfont icon-fengkong"></span>
-                    <h3>World of WarShips</h3>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
+                    <h3>World of Tanks</h3>
                     <p>Graphic Design</p>
                 </li>
                 <li>
-                    <span class="iconfont icon-dayu"></span>
-                    <h3>World of Warplanes</h3>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
+                    <h3>World of Tanks</h3>
+                    <p>Graphic Design</p>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
+                    <h3>World of Tanks</h3>
+                    <p>Graphic Design</p>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
+                    <h3>World of Tanks</h3>
                     <p>Graphic Design</p>
                 </li>
             </ul>
         </div>
+    </section>
+    <section class="wg-timeline">
+        <h2>Timeline</h2>
+        <p>时间发展线</p>
+        <ul class="wg-timeline-main">
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                <dl>
+                    <dt>April 2011</dt>
+                    <dd>World of WarShips</dd>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                        temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                </dl>
+            </li>
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                <dl>
+                    <dt>April 2011</dt>
+                    <dd>World of WarShips</dd>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                        temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                </dl>
+            </li>
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                <dl>
+                    <dt>April 2011</dt>
+                    <dd>World of WarShips</dd>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                        temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                </dl>
+            </li>
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                <dl>
+                    <dt>April 2011</dt>
+                    <dd>World of WarShips</dd>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                        temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                </dl>
+            </li>
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                <dl>
+                    <dt>April 2011</dt>
+                    <dd>World of WarShips</dd>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                        temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                </dl>
+            </li>
+
+        </ul>
 
     </section>
+    <section class="wg-team">
+        <h2>OUR AMAZING TEAM</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <ul class="clearfix">
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/5.jpg" alt="">
+                <h3>Kay Garland</h3>
+                <p>Lead Designer</p>
+                <i class="iconfont icon-twitter"></i>
+                <i class="iconfont icon-facebook"></i>
+                <i class="iconfont icon-wechat"></i>
+            </li>
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/5.jpg" alt="">
+                <h3>Kay Garland</h3>
+                <p>Lead Designer</p>
+                <i class="iconfont icon-twitter"></i>
+                <i class="iconfont icon-facebook"></i>
+                <i class="iconfont icon-wechat"></i>
+            </li>
+
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/5.jpg" alt="">
+                <h3>Kay Garland</h3>
+                <p>Lead Designer</p>
+                <i class="iconfont icon-twitter"></i>
+                <i class="iconfont icon-facebook"></i>
+                <i class="iconfont icon-wechat"></i>
+            </li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis,
+            totam corporis ea, alias ut unde.</p>
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <footer>
+        <ul class="clearfix">
+            <li>Copyright © Your Website 2014</li>
+            <li>
+                <i class="iconfont icon-twitter"></i>
+                <i class="iconfont icon-facebook"></i>
+                <i class="iconfont icon-wechat"></i>
+            </li>
+            <li>Privacy Policy
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>
