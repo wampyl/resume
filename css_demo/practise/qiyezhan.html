@@ -215,7 +215,9 @@
         /* 5 */
 
         .wg-team {
-            margin: 200px 0;
+            margin-top: 200px;
+            margin-left: 0;
+            margin-right: 0;
             padding: 100px 0;
             text-align: center;
             background-color: #F7F7F7;
@@ -251,8 +253,65 @@
             border-radius: 50%;
             opacity: 0.3;
         }
+        /* 6 */
+        .wg-link {
+            text-align: center;
+        }
+        .wg-link>ul>li {
+            width: 20%;
+            display: inline-block;
+        }
+        .wg-link img {
+            height: 100px;
+        }
+        
+        /* 7 */
+        .contact {
+            text-align: center;
+            background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png);
+            background-color: #000;
+        }
+        .contact>h2 {
+            font-size: 36px;
+            padding: 100px 0 30px 0;
+            color: #fff;
+        }
+        .contact>p {
+            color: #777;
+        }
+        .contact-main {
+            height: 800px;
+        }
+        .contact-main-left {
+            float: left;
+            margin-top: 5%;
+            margin-left: 20%;
+        }
+        .contact-main-right {
+            float: right;
+            margin-top: 5%;
+            margin-right: 25%;
+        }
+        .contact-main input {
+            height: 50px;
+            width: 500px;
+            margin: 10px 0;
+        }
+        .contact-main-right textarea {
+            margin: 10px 0;
+            height: 200px;
+            width: 500px;
+        }
+        .contact a {
+            position: relative;
+            top: 120px;
+            left: 450px;
+        }
 
+        /* 8 */
         footer {
+            margin-top: 20px;
+            font-size: 16px;
         }
         footer>ul{
             text-align: center;
@@ -264,6 +323,9 @@
         }
         footer .iconfont {
             font-size: 30px;
+        }
+        footer>ul>li>a {
+            color: #FED136;
         }
     </style>
 </head>
@@ -460,11 +522,28 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis,
             totam corporis ea, alias ut unde.</p>
     </section>
-    <section>
-
+    <section class="wg-link">
+        <ul>
+            <li><a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/designmodo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/designmodo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/envato.jpg" alt=""></a></li>
+            <li><a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/themeforest.jpg" alt=""></a></li>
+        </ul>
     </section>
-    <section>
-
+    <section class="contact">
+        <h2>CONTACT US</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="contact-main clearfix">
+            <div class="contact-main-left">
+                <div><input type="text" placeholder="YOUR NAME*"></div>
+                <div><input type="text" placeholder="YOUR EMAIL*"></div>
+                <div><input type="text" placeholder="YOUR PHONE*"></div>
+            </div>
+            <div class="contact-main-right">
+                <div><textarea name="" id="" placeholder="YOUR MESSAGE*"></textarea></div>
+            </div>
+            <a href="#" class="button">SEND MESSAGE</a>
+        </div>
     </section>
     <footer>
         <ul class="clearfix">
@@ -474,7 +553,9 @@
                 <i class="iconfont icon-facebook"></i>
                 <i class="iconfont icon-wechat"></i>
             </li>
-            <li>Privacy Policy
+            <li>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
             </li>
         </ul>
     </footer>
