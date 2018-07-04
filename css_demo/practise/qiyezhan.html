@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my project</title>
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_688816_gy17a829wpbsxlxr.css">
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 1 */
+
+        .menu a {
+            /* padding: 10px; */
+            margin: 0 10px;
+            font: bold;
+            font-weight: 700;
+        }
+
+        .menu a:hover {
+            color: #fed136;
+        }
+
+        /* 左上角标题 */
+
+        .title {
+            position: relative;
+            top: 10px;
+            left: 20px;
+
+            margin: 0;
+            color: #fed136;
+            font-size: 30px;
+        }
+
+        /* 右上menu */
+
+        .menu {
+            float: right;
+            margin-right: 100px;
+        }
+
+        .menu>li {
+            float: left;
+        }
+
+        /* 字体颜色 */
+
+        .index-color {
+            color: #fff;
+        }
+
+        .index-content {
+            padding: 250px 0 350px 0;
+            width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .index {
+            margin: 0;
+            background-size: 100%;
+            /* background-image: url(https://i.loli.net/2018/05/28/5b0bf24a353ab.jpg); */
+            /* background-image: url(https://i.loli.net/2018/05/31/5b0fc92184b12.jpg); */
+            background-image: url(https://i.loli.net/2018/05/31/5b0fc9af8b7fb.jpg);
+        }
+
+
+        /* 2 index */
+
+        .wg-intro {
+            text-align: center;
+            padding: 100px 0 100px 0;
+        }
+
+        .wg-games>li {
+            float: left;
+            width: 33%;
+        }
+
+        .wg-games span {
+            font-size: 100px;
+        }
+
+        .wg-games h3 {
+            font-size: 18px;
+        }
+
+        .wg-intro h2 {
+            font-size: 40px;
+            margin-top: 150px;
+        }
+
+        .wg-game {
+            margin-top: 200px;
+        }
+
+        /* 3 */
+
+        .wg-list {
+            text-align: center;
+            padding: 100px 0;
+            background-color: #F7F7F7;
+        }
+
+        .wg-list h2 {
+            margin-top: 100px;
+        }
+
+        .wg-list div>ul>li {
+            background-color: #fff;
+            margin: 10px 10px;
+            width: 30%;
+        }
+
+        .wg-list a {
+            display: block;
+            height: 100px;
+        }
+
+        .wg-lis img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* 4 */
+
+        .wg-timeline {
+            margin: 200px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .wg-timeline-main>li {
+            margin-top: 20px;
+        }
+
+        .wg-timeline-main>li::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .wg-timeline-main img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid lightskyblue;
+        }
+
+        .wg-timeline-main>li:nth-child(odd) img {
+            float: right;
+        }
+
+        .wg-timeline-main>li:nth-child(odd) {
+            padding-right: calc(50% - 50px);
+            text-align: right;
+        }
+
+        .wg-timeline-main>li:nth-child(odd) dl {
+            margin-right: 120px;
+        }
+
+        .wg-timeline-main>li:nth-child(even) img {
+            float: left;
+        }
+
+        .wg-timeline-main>li:nth-child(even) {
+            padding-left: calc(50% - 50px);
+            text-align: left;
+        }
+
+        .wg-timeline-main>li:nth-child(even) dl {
+            margin-left: 120px;
+        }
+
+        .wg-timeline-main>li dt {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .wg-timeline-main>li>dl>dd:nth-of-type(1) {
+            font-weight: 500;
+        }
+
+        .wg-timeline-main>li::before {
+            content: '';
+            display: inline-block;
+
+            position: absolute;
+            /* top: 40px; */
+            left: 50%;
+            top: 170px;
+            margin-left: 0;
+
+            height: 24px;
+            width: 4px;
+            background-color: lightskyblue;
+        }
+
+        /* 5 */
+
+        .wg-team {
+            margin-top: 200px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 100px 0;
+            text-align: center;
+            background-color: #F7F7F7;
+        }
+
+        .wg-team>p {
+            margin: 20px auto;
+        }
+
+        .wg-team>ul {
+            margin-top: 100px;
+            width: 1000px;
+            margin: 100px auto;
+        }
+
+        .wg-team>ul img {
+            border-radius: 50%;
+        }
+
+        .wg-team>ul>li {
+            float: left;
+            width: 33%;
+            /* margin: 0 30px; */
+        }
+
+        .wg-team .iconfont {
+            margin: 0 6px;
+            font-size: 30px;
+        }
+
+        .wg-team .iconfont:hover {
+            background-color: yellow;
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+        /* 6 */
+        .wg-link {
+            text-align: center;
+        }
+        .wg-link>ul>li {
+            width: 20%;
+            display: inline-block;
+        }
+        .wg-link img {
+            height: 100px;
+        }
+        
+        /* 7 */
+        .contact {
+            text-align: center;
+            background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png);
+            background-color: #000;
+        }
+        .contact>h2 {
+            font-size: 36px;
+            padding: 100px 0 30px 0;
+            color: #fff;
+        }
+        .contact>p {
+            color: #777;
+        }
+        .contact-main {
+            height: 800px;
+        }
+        .contact-main-left {
+            float: left;
+            margin-top: 5%;
+            margin-left: 20%;
+        }
+        .contact-main-right {
+            float: right;
+            margin-top: 5%;
+            margin-right: 25%;
+        }
+        .contact-main input {
+            height: 50px;
+            width: 500px;
+            margin: 10px 0;
+        }
+        .contact-main-right textarea {
+            margin: 10px 0;
+            height: 200px;
+            width: 500px;
+        }
+        .contact a {
+            position: relative;
+            top: 120px;
+            left: 450px;
+        }
+
+        /* 8 */
+        footer {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        footer>ul{
+            text-align: center;
+            width: 2000px;
+        }
+        footer>ul>li {
+            float: left;
+            width: 33%;
+        }
+        footer .iconfont {
+            font-size: 30px;
+        }
+        footer>ul>li>a {
+            color: #FED136;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="index">
+        <header class="clearfix">
+            <h2 class="title">Start Project</h2>
+            <ul class="index-color menu clearfix">
+                <li>
+                    <a href="#">SERVICES</a>
+                </li>
+                <li>
+                    <a href="#">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#">TEAM</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
+        </header>
+        <div class="index-color index-content">
+            <h2>
+                <i>Welcome To Our Studio</i>
+            </h2>
+            <h1>IT IS NICE TO MEET YOU</h1>
+            <a class="button" href="#">TELL ME MORE</a>
+        </div>
+    </section>
+    <section class="wg-intro">
+        <div class="layout">
+            <h2>wargaming</h2>
+            <p>战争三部曲</p>
+            <ul class="wg-games clearfix">
+                <li>
+                    <!-- <i class="iconfont icon-qing"></i> -->
+                    <span class="iconfont icon-qing"></span>
+                    <h3>World of Tanks</h3>
+                    <p>领土争夺战是《坦克世界》基于浏览器的多人军事模拟游戏。在领土争夺战中，玩家需要结交志同道合的战友创建军团，在全球作战地图上与其他军团进行领土争夺。</p>
+                </li>
+                <li>
+                    <!-- <i class="iconfont icon-fengkong"></i> -->
+                    <span class="iconfont icon-fengkong"></span>
+                    <h3>World of WarShips</h3>
+                    <p>游戏中玩家将会操控史上各国著名战舰鏖战大洋，重现二战世界大型海战实景。玩家需每人驾驶一艘战舰与其他11名玩家随机组成一支队伍，与另一支队伍在随机地图中互相战斗，完成目标并取得胜利。</p>
+                </li>
+                <li>
+                    <!-- <i class="iconfont icon-dayu"></i> -->
+                    <span class="iconfont icon-dayu"></span>
+                    <h3>World of Warplanes</h3>
+                    <p>游戏包含3种战机：专精于缠斗的中轻型战斗机，火力强大的重型战斗机，以及扮演黑死神角色的对地攻击机 </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="wg-list">
+        <div class="layout">
+            <h2>PORTFOLIO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <ul class="wg-games clearfix">
+                <li>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
+                    <h3>World of Tanks</h3>
+                    <p>Graphic Design</p>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
+                    <h3>World of Tanks</h3>
+                    <p>Graphic Design</p>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
+                    <h3>World of Tanks</h3>
+                    <p>Graphic Design</p>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
+                    <h3>World of Tanks</h3>
+                    <p>Graphic Design</p>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
+                    <h3>World of Tanks</h3>
+                    <p>Graphic Design</p>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="iconfont icon-qing"></span>
+                    </a>
+                    <h3>World of Tanks</h3>
+                    <p>Graphic Design</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="wg-timeline">
+        <h2>Timeline</h2>
+        <p>时间发展线</p>
+        <ul class="wg-timeline-main">
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                <dl>
+                    <dt>April 2011</dt>
+                    <dd>World of WarShips</dd>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                        temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                </dl>
+            </li>
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                <dl>
+                    <dt>April 2011</dt>
+                    <dd>World of WarShips</dd>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                        temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                </dl>
+            </li>
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                <dl>
+                    <dt>April 2011</dt>
+                    <dd>World of WarShips</dd>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                        temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                </dl>
+            </li>
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                <dl>
+                    <dt>April 2011</dt>
+                    <dd>World of WarShips</dd>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                        temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                </dl>
+            </li>
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+                <dl>
+                    <dt>April 2011</dt>
+                    <dd>World of WarShips</dd>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+                        temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+                </dl>
+            </li>
+
+        </ul>
+
+    </section>
+    <section class="wg-team">
+        <h2>OUR AMAZING TEAM</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <ul class="clearfix">
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/5.jpg" alt="">
+                <h3>Kay Garland</h3>
+                <p>Lead Designer</p>
+                <i class="iconfont icon-twitter"></i>
+                <i class="iconfont icon-facebook"></i>
+                <i class="iconfont icon-wechat"></i>
+            </li>
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/5.jpg" alt="">
+                <h3>Kay Garland</h3>
+                <p>Lead Designer</p>
+                <i class="iconfont icon-twitter"></i>
+                <i class="iconfont icon-facebook"></i>
+                <i class="iconfont icon-wechat"></i>
+            </li>
+
+            <li>
+                <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/5.jpg" alt="">
+                <h3>Kay Garland</h3>
+                <p>Lead Designer</p>
+                <i class="iconfont icon-twitter"></i>
+                <i class="iconfont icon-facebook"></i>
+                <i class="iconfont icon-wechat"></i>
+            </li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis,
+            totam corporis ea, alias ut unde.</p>
+    </section>
+    <section class="wg-link">
+        <ul>
+            <li><a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/designmodo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/designmodo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/envato.jpg" alt=""></a></li>
+            <li><a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/themeforest.jpg" alt=""></a></li>
+        </ul>
+    </section>
+    <section class="contact">
+        <h2>CONTACT US</h2>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="contact-main clearfix">
+            <div class="contact-main-left">
+                <div><input type="text" placeholder="YOUR NAME*"></div>
+                <div><input type="text" placeholder="YOUR EMAIL*"></div>
+                <div><input type="text" placeholder="YOUR PHONE*"></div>
+            </div>
+            <div class="contact-main-right">
+                <div><textarea name="" id="" placeholder="YOUR MESSAGE*"></textarea></div>
+            </div>
+            <a href="#" class="button">SEND MESSAGE</a>
+        </div>
+    </section>
+    <footer>
+        <ul class="clearfix">
+            <li>Copyright © Your Website 2014</li>
+            <li>
+                <i class="iconfont icon-twitter"></i>
+                <i class="iconfont icon-facebook"></i>
+                <i class="iconfont icon-wechat"></i>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
