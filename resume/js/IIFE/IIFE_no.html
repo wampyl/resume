@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    ul{list-style:none;padding:0;}
+    li{border:1px solid black;}
+  </style>
+  <script src="https://cdn.bootcss.com/lodash.js/4.17.10/lodash.core.js"></script>
+</head>
+<body>
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+</ul>
+
+<script>
+    var ul = document.getElementsByTagName('ul')[0]
+    var liList = ul.getElementsByTagName('li')
+    for(var i=0; i<6; i++){
+        liList[i].onclick = function(){
+            alert(i) // 为什么 alert 出来的总是 6，而不是 0、1、2、3、4、5
+        }
+    }
+//     var array = [];
+// //生成一个100w 长度的数组，并赋值随机数
+// for(var i=0;i<1000000;i++) {
+//   array.push(Math.floor(Math.random()*10000))
+// }
+
+// //lodash forEach 遍历
+// console.time('lodash for Each');
+// _.forEach(array,function (key) {
+
+// });
+// console.timeEnd('lodash for Each');
+
+// //原生forEach 遍历
+// console.time('native for Each');
+// array.forEach(function (key) {
+
+// });
+// console.timeEnd('native for Each');
+
+
+</script>
+</body>
+</html>
