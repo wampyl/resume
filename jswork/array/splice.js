@@ -14,7 +14,8 @@ function push(arr){
     return arr.length
 }
 //下面的写法有兴趣的同学可自行了解 //http://es6.ruanyifeng.com/#docs/array
-function push(arr, ...args){
+function push3(arr, ...args){
+    console.log(...args)
     arr.splice(arr.length, 0, ...args)
     return arr.length
 }
@@ -32,14 +33,29 @@ console.log(b)
 console.log(arr)
 
 x= [1,2,3]
-function pushSplice2(arr) {
-    console.log(arguments[0])
-    for(let i=1;i<arguments.length;i++) {
-        console.log(arguments.length)
-        console.log("helllo"+arguments[i])
-        arr.splice(arr.length, 0, arguments[i])
-    }
+// function pushSplice2(arr) {
+//     console.log(arguments[0])
+//     for(let i=1;i<arguments.length;i++) {
+//         console.log(arguments.length)
+//         console.log("helllo"+arguments[i])
+//         arr.splice(arr.length, 0, arguments[i])
+//     }
+//     return arr.length
+// }
+// console.log(pushSplice2(x))
+// console.log(x)
+console.log("---")
+// console.log(push3(x, 5))
+console.log(x)
+
+
+// pop function
+
+function popSplice(arr) {
+    console.log(arr.splice(-1))
     return arr.length
 }
-console.log(pushSplice2(x))
+
+xx = popSplice(x)
+console.log(xx)
 console.log(x)
