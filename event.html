@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container,
+        .box,
+        .target {
+            margin: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">click</button>
+    <div class="container">
+        container
+        <div class="box">
+            box
+            <div class="target">
+                target
+            </div>
+        </div>
+    </div>
+    <script>
+        // 写一个 Demo，演示事件传播的过程，演示阻止传播的效果。
+        function $(selector) {
+            return document.querySelector(selector)
+        }
+        let btn = $('#btn')
+        btn.onclick = function(e){
+            console.log(e)
+            console.log(this)
+            console.log(e.target)
+        }
+        btn.addEventListener('click', function(evn){
+            cosole.log(env)
+        })
+        $('.container').addEventListener('click', function(e){
+            console.log(e)
+            e.stopPropagation()
+            console.log("捕获阶段 container")
+            alert("捕获阶段 container")
+        }, true)
+        $('.box').addEventListener('click', function(e) {
+            console.log(e)
+            console.log("捕获阶段 box")
+            alert("捕获阶段 box")
+        }, true)
+        $('.target').addEventListener('click', function(e) {
+            console.log(e)
+            console.log("捕获阶段 target")
+            alert("捕获阶段 target")
+        }, true)
+        $('.container').addEventListener('click', function(e){
+            alert("冒泡阶段 container")
+            console.log("冒泡阶段 container")
+            console.log(e)
+        })
+        $('.target').addEventListener('click', function(e){
+            console.log(e)
+            console.log("冒泡阶段 target")
+            alert("冒泡阶段 target")
+        })
+        $('.box').addEventListener('click', function(e){
+            console.log(e)
+            console.log("冒泡阶段 box")
+            alert("冒泡阶段 box")
+            
+        })
+    </script>
+</body>
+</html>
