@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 14px/1.5 Arial;
+}
+html, body, main{
+    height: 100%;
+}
+a {
+    /* a标签下划线 */
+    text-decoration-line: none;
+    /* cursor: pointer; */
+    color: #888;
+}
